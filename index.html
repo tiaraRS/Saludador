@@ -1,6 +1,29 @@
 <html>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: "Fantasy", "Copperplate";
+      line-height: 1.6;
+      margin-left: 5em;
+      font-size: 20px;
+    }
+    label {
+      color: green;
+    }
+    #saludar {
+      background-color: rgb(153, 142, 216);
+      font-size: 25px;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      height: 70%;
+    }
+  </style>
   <body>
-    <h1>Hola</h1>
+    <h2>Hola</h2>
     <form id="saludador-form">
       <label for='nombre-input'>Tu nombre:</label>
       <input type='text' id="nombre-input" /><br>
@@ -15,9 +38,10 @@
       <select id='idioma-input' name="idioma">
         <option value="español" >Español</option>
         <option value="ingles" >Ingles</option>
-      </select><br>
-      <input type='submit' value="Saludar"/>
+      </select><br><br>
+      <input type='submit' id="saludar" value="Saludar"/>
     </form>
+    <img src="imgHola.gif" class="center">
     <script src="./src/index.js"></script>
   </body>
 </html>

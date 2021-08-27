@@ -39,7 +39,7 @@ function getTituloPersonalSegunEdad(edad, mayor30F, mayor30M, mayor16F, mayor16M
 form.addEventListener("submit", event =>{
     if(idioma.value == "español"){
         console.log("in");
-        mensaje = "Hola, " + getSaludoSegunTiempo(horaActual,"buenos días ","buenas tardes ","buenos noches ");
+        mensaje = "Hola, " + getSaludoSegunTiempo(horaActual,"buenos días ","buenas tardes ","buenas noches ");
         mensaje = mensaje + getTituloPersonalSegunEdad(edad,"señora ","señor ","señorita ", "joven ");
     }
     else{
